@@ -1,0 +1,28 @@
+Cloud storage e data rakhar jonno MongoDB
+npm init -y -> for all yes
+
+debug
+"scripts":{
+    "start": "node index.js" -> backend dev run korar jonno.rta always set korte hbe packagejson install korar por
+}
+
+MongoDB set up -> account openning
+
+Deply your cluster
+Cluster0
+username, password
+
+database access
+
+network access  (server er sathe connection fix)
+network access from anywhere 0000
+
+now comes connect to cluster.this connect our backend with mongoDB Atlas cloud
+cluster -> connect -> driver
+
+
+
+console.dir -> long error hole expand kore kore dekhabe
+
+
+mongoDB docx  -> documentation -> client library -> node js -> usage example -> insert ->Insert a documentation
