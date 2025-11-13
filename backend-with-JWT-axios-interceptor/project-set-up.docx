@@ -1,0 +1,57 @@
+1.client side setup
+
+2.vite react, tailwind , daisy ui, react router
+
+design idea from theme forest (Explore more)
+
+set up with layout, footer and header
+
+3. style the header and use lottie - react
+
+4.integrate firebase and use environment variable
+
+sign up form creating
+console kore dekha j browser e ase kina .
+
+ele firebase diye connect kora.
+
+5. AuthContext and Register User and check information coming in firebase or not
+
+6. Implement signIn user, Auth State change Handler, Sign out 
+
+7. creating banner with simple react framer motion
+
+
+react motion website.
+image collection from free pik
+HTML colors (color motion)
+
+8.Banner image animation using react motion
+
+9.Social log in 
+
+(Icon8)
+
+server side
+
+1.connect mongo
+
+2.data load in the client side
+
+3.Display data using card
+use suspense
+
+react icon
+
+4.create detail API and show detailed data 
+
+if not logged in user then ...
+
+5.Create private route and auth redirect
+
+6. application form
+
+        useParams hook
+7.save job application using axios JS
+
+axios -> method bola lage na, content type bola lage na, stringify akare convert korte hoy na

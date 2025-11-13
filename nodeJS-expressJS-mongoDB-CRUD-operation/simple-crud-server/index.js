@@ -7,7 +7,7 @@
  */
 
 const express = require('express');            //1.express jeta install korechi seta set holo
-const { MongoClient, ServerApiVersion } = require('mongodb');          //9 rquire mongodb atlas in our code
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');          //9 rquire mongodb atlas in our code
 const cors = require('cors');        //6
 const app = express();        //2. express er ekti app baniye fela 
 const port = process.env.PORT || 5000;       //3.port define
@@ -43,6 +43,12 @@ async function run(){
             console.log('data in the server', req.body);
             const newUser = req.body;
             const result = await userCollection.insertOne(newUser);
+            res.send(result);
+        })
+        app.delete('/users/:id', async (req,res) =>{
+            const id = req.params.id
+            const query ={_id : new ObjectId}
+            const result = await userCollection.deleteOne(query);
             res.send(result);
         })
 

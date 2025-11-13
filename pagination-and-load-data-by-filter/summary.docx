@@ -1,0 +1,43 @@
+pagination -> dividing large data into small page.
+যদি সার্ভারে ১০,০০০ টা data থাকে, আর তুমি একবারে সব লোড করো, তাহলে
+
+page slow হয়ে যাবে
+
+unnecessary data লোড হবে
+
+network load বেড়ে যাবে
+
+তাই আমরা প্রতি page-এ কিছু নির্দিষ্ট সংখ্যক data লোড করি (যেমন 10 বা 20 টা করে)।
+
+১. টোটাল কত ডাটা আছে সেই অনুসারে কত পেইজ হয়েছে। সেটা বের করে প্রত্যেক পেইজ এর জন্য একটা করে বাটন বানাতে হবে। 
+
+
+
+২. বাটনে ক্লিক করলে, সেই অনুসারে api তে কল করবে। অর্থাৎ state আসবে। সেই অনুসারে page স্টেট্ বা সাইজ কে ডিপেন্ডেন্সি হিসেবে ইউজ করতে হবে useEffect এর মধ্যে। 
+
+
+
+৩. API end point এর মধ্যে, page এবং প্রতি পেইজে কত ডাটা থাকবে সেই অনুসারে কিছু ডাটা স্কিপ করতে হবে। তারপর সেই অনুসারে ডাটা লোড করে ডাইনামিকভাবে ডাটা কাউন্ট, কত পেইজ হবে সেটা এবং ডাটা লোড এর বিষয়গুলা সেট করতে হবে। 
+
+
+dollar in operator
+
+
+data load by filter:
+
+“Filter” মানে হলো ডেটা থেকে নির্দিষ্ট শর্ত অনুযায়ী কিছু অংশ দেখানো।
+যেমন —
+তোমার কাছে ১০০ টা product আছে, কিন্তু তুমি শুধু “Electronics” বা “Price < 1000” পণ্যগুলো দেখতে চাও।
+
+
+create backend
+set mongoDB connection
+password, credential info keep in .environment
+insert Data in mongoDB 
+
+data load for checking
+
+delete fake data and load real data 
+
+code refector
+

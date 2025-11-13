@@ -1,0 +1,41 @@
+JWT - JSON WEB token
+
+securely transmit information between two parties
+
+without JWT I or any one can access each other protected route
+
+JWT is mainly used for authorization purpose, not authentication 
+
+authentication -> who are you ? (Log in password)
+
+Authorization  -> what you can do? add photo, Delete photo, View Photo 
+have I the permission to do it? am I the right person for this operation
+
+how JWT works
+1. client log in with username and password
+
+2.if verify account done , server(backend) creates a token for the client
+
+3.server sends a token to the client 
+
+4.client side stores the token on either local storage or browser cookie
+
+https cookie is better.
+(why token store in cookie?later if need any data access then url send with this token to verify role)
+5.next time the client makes a request , a copy of the token is send to the server for authorization.
+
+6.server verifies the JWT token(self token,valid,expire) before giving the authorization 
+
+7.If token is correct then server responds to the client's request
+
+token has three section
+1.(Header)first dot, (why it is using, what its work)
+2.(Payload)Second dot..email, role information, when token created
+3.third dot .. signature (hash, key)
+
+JWT 
+1.standard companies used it, Secure API
+
+2.securely transmits information between two parties as a JSON object.
+
+3.use digital signature.

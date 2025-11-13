@@ -1,0 +1,37 @@
+1.node mongo
+
+2.CRUD operation
+
+3.Client and server concept
+
+4.client side router set up
+
+5.server side database set up
+
+6.Hiding Credential with Dotenv in server side.
+
+7.Credential of firebase (Environment variable of react)
+
+8.Insert in mongo, 
+
+9.making UI
+
+
+project
+1.set up backend
+2.set up frontend react 
+3.making form
+4.Send Coffee data to the server and store in the mongodb database
+5.Use SweetAlert, create Get API for coffee data
+6.View all coffee and create coffee card delete button
+7.Delete a coffee after confirm and create single coffee get API
+8.Fetch coffee for update and create update form and update api
+9.Update single coffee information and handle removing coffee after delete
+
+Authentication with firebase 
+1.project cloning
+2.auth provider and user sign up using firebase
+3.user create korar por user data maintain kora.
+4.form ektai thakbe. email pass firebase e jabe ar baki details mongoDB te
+5. display users in a table and create get and delete user api
+6. update user login info after successful login(Patch)
