@@ -1,0 +1,7 @@
+Access token can be expire
+
+refresh token.(if valid then generate or renew token)
+
+web search -> JWT token
+
+npm install jsonwebtoken (popular)
