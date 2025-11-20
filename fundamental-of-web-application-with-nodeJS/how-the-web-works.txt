@@ -1,0 +1,53 @@
+how the web works?
+internet -> www ->  we creating web application and send them web ->
+
+we getting data from those web.
+
+web theke request jabe server e. 
+
+
+server likes our computer , consist with processor, ram, storage
+
+server internet e deoa ache.spread(spread with cable, star link)
+
+ওয়েব কীভাবে কাজ করে?
+
+আমরা ইন্টারনেট ব্যবহার করে ওয়েব অ্যাপ্লিকেশন তৈরি করি এবং সেগুলোকে WWW (World Wide Web)–এ প্রকাশ করি।
+User যখন কোনো web page open করে, তখন client ও server–এর মধ্যে Request–Response Model / client-server architecture অনুযায়ী ডাটা আদান-প্রদান হয়।
+
+client server architecture
+         request
+client -----------> server
+       <----------- 
+          Response 
+
+Client থেকে পাঠানো request কিভাবে কাজ করে?
+
+Client (Browser) যখন কোনো website open করে, তখন একটি URL (Uniform Resource Locator) এর মাধ্যমে request পাঠানো হয়।
+যেমনঃ https://www.facebook.com/success
+
+একটি URL এর প্রধান অংশগুলো—
+
+Protocol → http / https
+Domain Name → www.facebook.com
+Resource Path → /success
+URL এর এই domain name সরাসরি server এ যায় না। প্রথমে যায় DNS (Domain Name System) সার্ভারে।
+DNS ডোমেইনকে IP Address-এ কনভার্ট করে।
+যেমনঃ
+142.250.184.14 : 443
+
+এরপর TCP/IP socket connection তৈরি হয়।
+যদি সাইটে নিরাপত্তা থাকে, SSL/TLS Certificate ব্যবহার হয়ে HTTPS কানেকশন তৈরি হয়।
+এতে ডেটা Encryption / Decryption এর মাধ্যমে সিকিউর থাকে।
+
+এবার HTTP request server এ যায়। HTTP request এ থাকে-
+Method → GET | POST | PUT | PATCH | DELETE
+Request Headers
+Request Body (optional)
+
+এরপর Server request process করে browser এ response পাঠায়। Response এ থাকে - 
+Status Code (200, 404, 500 etc.)
+Response Header
+Response Body (JSON, HTML, etc.)
+Browser response render করে এবং আমরা web page দেখতে পাই।
+
